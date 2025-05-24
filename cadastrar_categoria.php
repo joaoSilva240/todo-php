@@ -7,5 +7,6 @@ $comando = $conexao->prepare("INSERT INTO categoria VALUES(0,:nome)");
 $comando->bindParam(":nome",$nome);
 $comando->execute();
 
-echo "Cadastro realizado com sucesso";
+header("Location: index.php");
+// echo "Cadastro realizado com sucesso";
 ?>
